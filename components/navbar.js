@@ -1,35 +1,41 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Link from "next/link";
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 
 export default function Navbar() {
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
     const handleNav = () => {
         setNav(!nav)
-    }
+    };
+
+    useEffect(() =>{
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            } else {
+                setShadow(false);
+            }
+        };
+        window.addEventListener('scroll', handleShadow);
+    }, []);
 
     return (
-        <div className="fixed w-full h-20 shadow-xl z-[100]">
+        <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <div>
                     <ul className="hidden md:flex">
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                                Home
-                            </li>
-                        </Link>
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                                Experience
-                            </li>
-                        </Link>
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                                Skills
-                            </li>
-                        </Link>
+                        <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
+                            <Link href='/'>Home</Link>
+                        </li>
+                        <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
+                            <Link href='#experience'>Experience</Link>
+                        </li>
+                        <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
+                            <Link href='#skills'>Skills</Link>
+                        </li>
                         {/* <Link href='/'>
                             <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
                                 Projects

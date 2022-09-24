@@ -67,10 +67,10 @@ export default function Navbar() {
                         <Link href="/">
                             <li className="py-4 text-sm">Home</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="#experience">
                             <li className="py-4 text-sm">Experience</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="#skills">
                             <li className="py-4 text-sm">Skills</li>
                         </Link>
                         {/* <Link href="/">

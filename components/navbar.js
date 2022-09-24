@@ -65,13 +65,13 @@ export default function Navbar() {
                 <div className="py-2 flexflex-col">
                     <ul className="uppercase">
                         <Link href="/">
-                            <li className="py-4 text-sm">Home</li>
+                            <li onClick={() => setNav(false)} className="py-4 text-sm">Home</li>
                         </Link>
                         <Link href="#experience">
-                            <li className="py-4 text-sm">Experience</li>
+                            <li onClick={() => setNav(false)} className="py-4 text-sm">Experience</li>
                         </Link>
                         <Link href="#skills">
-                            <li className="py-4 text-sm">Skills</li>
+                            <li onClick={() => setNav(false)} className="py-4 text-sm">Skills</li>
                         </Link>
                         {/* <Link href="/">
                             <li className="py-4 text-sm">Projects</li>

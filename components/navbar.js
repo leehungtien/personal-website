@@ -7,6 +7,8 @@ import {BsFillPersonLinesFill} from 'react-icons/bs';
 export default function Navbar() {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
+    const [navBg, setNavBg] = useState('#ecf0f3');
+
     const handleNav = () => {
         setNav(!nav)
     };
@@ -23,7 +25,12 @@ export default function Navbar() {
     }, []);
 
     return (
-        <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+        <div 
+            style={{ backgroundColor: `${navBg}`}}
+            className={
+                shadow
+                ? 'fixed w-full h-20 shadow-xl z-[100]'
+                : 'fixed w-full h-20 z-[100]'}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <div>
                     <ul className="hidden md:flex">

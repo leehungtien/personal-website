@@ -30,16 +30,11 @@ export default function Navbar() {
                                 Skills
                             </li>
                         </Link>
-                        <Link href='/'>
+                        {/* <Link href='/'>
                             <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
                                 Projects
                             </li>
-                        </Link>
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                                Contact
-                            </li>
-                        </Link>
+                        </Link> */}
                     </ul>
                     <div onClick={handleNav} className="md:hidden cursor-pointer hover:scale-105 ease-in duration-75">
                         <AiOutlineMenu size={25}/>
@@ -72,12 +67,9 @@ export default function Navbar() {
                         <Link href="/">
                             <li className="py-4 text-sm">Skills</li>
                         </Link>
-                        <Link href="/">
+                        {/* <Link href="/">
                             <li className="py-4 text-sm">Projects</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4 text-sm">Contact</li>
-                        </Link>
+                        </Link> */}
                     </ul>
                     <div className="pt-4">
                         <p className="uppercase tracking-widest text-[#5651e5]">

@@ -2,7 +2,7 @@ import userData from '../constants/data'
 
 export default function Experience() {
     return (
-        <div id='experience' className="w-full p-2">
+        <div id='experience' className="w-full p-2 md:mt-12">
             <div className="max-w-[1240px] max-auto flex flex-col justify-center h-full">
                 <h1 className="text-5xl tracking-widest uppercase text-[#5651e5]">
                     Experience

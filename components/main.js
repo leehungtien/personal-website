@@ -7,9 +7,9 @@ import Profile from '../public/assets/profile.jpg';
 export default function Main() {
     return (
         <div id='home' className="w-full h-screen text-center">
-            <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+            <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center">
                 <div>
-                    <div className="md:mt-20 mb-4 flex flex-wrap justify-center">
+                    <div className="md:mt-20 mb-8 flex flex-wrap justify-center align-bottom">
                         <div className="w-6/12 sm:w-4/12 px-4">
                             <Image
                                 src={Profile}

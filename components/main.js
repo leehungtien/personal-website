@@ -1,12 +1,25 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from 'next/image';
+import Profile from '../public/assets/profile.jpg';
 
 export default function Main() {
     return (
         <div id='home' className="w-full h-screen text-center">
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
                 <div>
+                    <div className="md:mt-20 mb-4 flex flex-wrap justify-center">
+                        <div className="w-6/12 sm:w-4/12 px-4">
+                            <Image
+                                src={Profile}
+                                alt='Picture of the author'
+                                width='300'
+                                height='400'
+                                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                            />
+                        </div>
+                    </div>
                     <p className="uppercase text-sm tracking-widest text-gray">
                         LET'S BUILD SOMETHING TOGETHER
                     </p>

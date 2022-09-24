@@ -22,7 +22,7 @@ export default function Navbar() {
                         </Link>
                         <Link href='/'>
                             <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                                About
+                                Experience
                             </li>
                         </Link>
                         <Link href='/'>
@@ -67,7 +67,7 @@ export default function Navbar() {
                             <li className="py-4 text-sm">Home</li>
                         </Link>
                         <Link href="/">
-                            <li className="py-4 text-sm">About</li>
+                            <li className="py-4 text-sm">Experience</li>
                         </Link>
                         <Link href="/">
                             <li className="py-4 text-sm">Skills</li>

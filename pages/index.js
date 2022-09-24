@@ -14,9 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <Main/>
-      <Experience/>
-      <Skills/>
+      <div className='flex flex-col md:space-y-20'>
+        <Main/>
+        <Experience/>
+        <Skills/>
+      </div>
     </div>
   )
 }

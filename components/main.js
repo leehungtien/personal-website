@@ -1,8 +1,9 @@
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Image from 'next/image';
 import Profile from '../public/assets/profile.jpg';
+import userData from '../constants/data';
+import Link from 'next/link';
 
 export default function Main() {
     return (
@@ -37,18 +38,27 @@ export default function Main() {
                         in Software Engineering. 
                     </p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
-                            <FaLinkedinIn/>
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
-                            <FaGithub/>
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
-                            <AiOutlineMail/>
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
-                            <BsFillPersonLinesFill/>
-                        </div>
+                        <Link href={userData.urls.linkedin}>
+                            <a>
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
+                                    <FaLinkedinIn/>
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href={userData.urls.github}>
+                            <a>
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
+                                    <FaGithub/>
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href='mailto: leehungtien2nd@gmail.com'>
+                            <a>
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-75">
+                                    <AiOutlineMail/>
+                                </div>
+                            </a>
+                        </Link>
                     </div>    
                 </div>
             </div>

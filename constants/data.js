@@ -1,4 +1,10 @@
 const userData = {
+    urls: {
+            linkedin: "https://www.linkedin.com/in/hung-tien-lee/",
+            github: "https://github.com/leehungtien",
+    },
+
+    // Take note in the difference in format (list in an object) for experience
     experience: [
         {
             title: "Machine Learning Engineer Intern",

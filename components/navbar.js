@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import Link from "next/link";
-import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
+import {AiOutlineClose, AiOutlineMail, AiOutlineMenu, AiFillLinkedin} from 'react-icons/ai';
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
-import {BsFillPersonLinesFill} from 'react-icons/bs';
+import userData from '../constants/data'
 
 export default function Navbar() {
     const [nav, setNav] = useState(false);
@@ -32,8 +32,20 @@ export default function Navbar() {
                 ? 'fixed w-full h-20 shadow-xl z-[100]'
                 : 'fixed w-full h-20 z-[100]'}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+                <div className="flex flex-col px-4">
+                    <Link href="/">
+                        <a>
+                        <h1 className="font-semibold text-xl dark:text-gray-800">
+                            LEE HUNG TIEN
+                        </h1>
+                        <p className="text-base font-light text-gray-800 dark:text-gray-800">
+                            Aspiring Software Engineer
+                        </p>
+                        </a>
+                    </Link>
+                </div>
                 <div>
-                    <ul className="hidden md:flex">
+                    <ul className="hidden md:flex mr-24">
                         <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
                             <Link href='/'>Home</Link>
                         </li>
@@ -52,6 +64,29 @@ export default function Navbar() {
                     <div onClick={handleNav} className="md:hidden cursor-pointer hover:scale-105 ease-in duration-75">
                         <AiOutlineMenu size={25}/>
                     </div>
+                </div>
+                <div className="md:flex items-center justify-between hidden px-2">
+                    <Link href={userData.urls.linkedin}>
+                        <a>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                                <FaLinkedinIn/>
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href={userData.urls.github}>
+                        <a>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                                <FaGithub/>
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href='mailto: leehungtien2nd@gmail.com'>
+                        <a>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                                <AiOutlineMail/>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
             </div>
 
@@ -89,18 +124,27 @@ export default function Navbar() {
                             Let's Connect
                         </p>
                         <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
-                                <FaLinkedinIn/>
-                            </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
-                                <FaGithub/>
-                            </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
-                                <AiOutlineMail/>
-                            </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
-                                <BsFillPersonLinesFill/>
-                            </div>
+                            <Link href={userData.urls.linkedin}>
+                                <a>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                                        <FaLinkedinIn/>
+                                    </div>
+                                </a>
+                            </Link>
+                            <Link href={userData.urls.github}>
+                                <a>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                                        <FaGithub/>
+                                    </div>
+                                </a>
+                            </Link>
+                            <Link href='mailto: leehungtien2nd@gmail.com'>
+                                <a>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                                        <AiOutlineMail/>
+                                    </div>
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

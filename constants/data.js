@@ -23,6 +23,24 @@ const userData = {
             • Basic debugging of batch and shell script files
             • Debugged automated test cases using Robot framework for Ethernet development`,
         },
+        {
+            title: "Software Engineer Intern",
+            company: "Standardly Pte Ltd",
+            year: "2021",
+            desc: `• Developed 10+ user features including user log-in and sign-up 
+            • Utilized REST APIs to create services through Angular’s HttpClient
+            • Handled data fetched from servers using RXJS operators`,
+        },
+        {
+            title: "Software Engineer Intern",
+            company: "Sopra Steria Asia",
+            year: "2021",
+            desc: `• Redesigned code base using Angular framework to develop discrete, modular site structures with a 
+            focus on reusability of code to increase web page functionality
+            • Improved predecessors code base to allow content in web page to always recenter despite a 
+            dynamically changing window size
+            • Conducted testing by mocking up API response through Swagger`,
+        },
     ]
 }
 

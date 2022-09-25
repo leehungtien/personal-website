@@ -23,11 +23,11 @@ export default function Main() {
                     </div>
                     
                     <h1 className="text-[#5651e5] py-4">
-                        Hi, I&#39;m Hung Tien
+                        Hi, I&apos;m Hung Tien
                     </h1>
 
                     <p className="uppercase text-sm tracking-widest text-gray">
-                        LET&#39;S BUILD SOMETHING TOGETHER
+                        LET&apos;S BUILD SOMETHING TOGETHER
                     </p>
                     
                     <div class="relative flex items-center py-5">

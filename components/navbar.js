@@ -45,7 +45,7 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div>
-                    <ul className="hidden md:flex mr-24">
+                    <ul className="hidden md:flex mr-32">
                         <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
                             <Link href='/'>Home</Link>
                         </li>

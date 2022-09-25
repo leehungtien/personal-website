@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import css from 'programming-languages-logos/src/css/css.png'
 import C from 'programming-languages-logos/src/c/c.png'
+import javascript from 'programming-languages-logos/src/javascript/javascript.png'
+import html from 'programming-languages-logos/src/html/html.png'
+import cpp from 'programming-languages-logos/src/cpp/cpp.png'
+import typescript from 'programming-languages-logos/src/typescript/typescript.png'
+import python from 'programming-languages-logos/src/python/python.png'
 
 
 export default function Skills() {
@@ -15,7 +20,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className='m-auto'>
                             <Image
-                                src='/../public/assets/skills/html.png'
+                                src={html}
                                 width='64px'
                                 height='64px'
                                 alt='/'
@@ -30,7 +35,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className='m-auto'>
                             <Image
-                                src='/../public/assets/skills/javascript.png'
+                                src={javascript}
                                 width='64px'
                                 height='64px'
                                 alt='/'
@@ -45,7 +50,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className='m-auto'>
                             <Image
-                                src='/../public/assets/skills/c++.png'
+                                src={cpp}
                                 width='64px'
                                 height='64px'
                                 alt='/'
@@ -60,7 +65,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className='m-auto'>
                             <Image
-                                src='/../public/assets/skills/python.png'
+                                src={python}
                                 width='64px'
                                 height='64px'
                                 alt='/'
@@ -75,7 +80,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className='m-auto'>
                             <Image
-                                src='/../public/assets/skills/typescript.png'
+                                src={typescript}
                                 width='64px'
                                 height='64px'
                                 alt='/'

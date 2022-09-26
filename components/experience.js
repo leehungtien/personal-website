@@ -51,7 +51,7 @@ const ExperienceCard = ({ title, desc, year, company }) => {
                 <ul>
                     {
                         desc.map((sentence, i) => {
-                            return (<li>{sentence}</li>)
+                            return (<li key={i}>{sentence}</li>)
                         })
                     }
                 </ul>

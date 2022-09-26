@@ -16,7 +16,7 @@ export default function Experience() {
                     <>
                     <ExperienceCard
                         title={exp.title}
-                        desc={exp.desc}
+                        desc={exp.desc.split('\n')}
                         year={exp.year}
                         company={exp.company}
                     />
@@ -39,6 +39,7 @@ export default function Experience() {
     );
 }
 const ExperienceCard = ({ title, desc, year, company }) => {
+    // console.log(desc)
     return (
         <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-200 z-10 mx-4">
             <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800">
@@ -46,7 +47,15 @@ const ExperienceCard = ({ title, desc, year, company }) => {
             </h1>
             <h1 className="font-semibold text-xl">{title}</h1>
             <p>{company}</p>
-            <p className="text-gray-600 dark:text-gray-600 my-2">{desc}</p>
+            <p className="text-gray-600 dark:text-gray-600 my-2">
+                <ul>
+                    {
+                        desc.map((sentence, i) => {
+                            return (<li>{sentence}</li>)
+                        })
+                    }
+                </ul>
+            </p>
         </div>
     );
   };

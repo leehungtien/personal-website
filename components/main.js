@@ -34,7 +34,7 @@ export default function Main() {
                         <div class="flex-grow border-t border-gray-400"></div>
                     </div>
                     <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-                        Electrical Engineer with an immense interest
+                        Electrical Engineer with an profound interest
                         in Software Engineering. 
                     </p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

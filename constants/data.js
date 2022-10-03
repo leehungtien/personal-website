@@ -4,7 +4,20 @@ const userData = {
             github: "https://github.com/leehungtien",
     },
 
-    // Take note in the difference in format (list in an object) for experience
+    progLangs: [
+      'Python', 'C', 'C++', 'JavaScript', 'TypeScript'
+    ],
+
+    webTech: [
+        'Angular', 'Next.js', 'Tailwind CSS'
+    ],
+
+    ML: [
+        'PyTorch', 'scikit-learn', 'NumPy', 'pandas'
+    ],
+
+    // Take note in the difference in format (list in an object)
+
     experience: [
         {
             title: "Machine Learning Engineer Intern",

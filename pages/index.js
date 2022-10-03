@@ -4,7 +4,6 @@ import Navbar from '../components/navbar'
 import Main from '../components/main'
 import Skills from '../components/skills'
 import Experience from '../components/experience'
-import { getAllSkillsIds } from '../lib/skillsData'
 
 export default function Home({ allSkillsID }) {
   return (
@@ -22,14 +21,4 @@ export default function Home({ allSkillsID }) {
       </div>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const allSkillsID = getAllSkillsIds();
-  allSkillsID.map((item) => console.log(item))
-  return {
-    props: {
-      allSkillsID,
-    },
-  };
 }

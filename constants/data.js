@@ -23,9 +23,9 @@ const userData = {
             title: "Machine Learning Engineer Intern",
             company: "DSO National Laboratories",
             year: "2022",
-            desc: `• Scripted generation of synthetic images using Blender software’s Python API
-            • Utilized Data Augmentation techniques that improved test accuracy by at least 5%
-            • Trained Resnet50 model on generated synthetic data for Image Classification task`,
+            desc: `•	Implementing model for few-shot-learning classification task in area of limited real data
+            •	Scripted generation of synthetic images using Blender software’s Python API
+            •	Utilized Data Augmentation techniques and Transfer Learning`,
         },
         {
             title: "Software Engineer Intern",

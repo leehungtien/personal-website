@@ -50,10 +50,10 @@ export default function Navbar() {
                             <Link href='/'>Home</Link>
                         </li>
                         <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                            <Link href='#experience'>Experience</Link>
+                            <Link href='/#experience'>Experience</Link>
                         </li>
                         <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">
-                            <Link href='#skills'>Skills</Link>
+                            <Link href='/#skills'>Skills</Link>
                         </li>
                         {/* <Link href='/'>
                             <li className="ml-10 text-sm uppercase cursor-pointer hover:scale-105 ease-in duration-75">

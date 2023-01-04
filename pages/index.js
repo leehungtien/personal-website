@@ -14,7 +14,7 @@ export default function Home({ allSkillsID }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <div className='flex flex-col sm:space-y-20'>
+      <div>
         <Main/>
         <Experience/>
         <Skills/>

@@ -20,12 +20,12 @@ const userData = {
 
     experience: [
         {
-            title: "Machine Learning Engineer Intern",
+            title: " Computer Vision Research Intern",
             company: "DSO National Laboratories",
             year: "2022",
-            desc: `•	Implementing model for few-shot-learning classification task in area of limited real data
-            •	Scripted generation of synthetic images using Blender software’s Python API
-            •	Utilized Data Augmentation techniques and Transfer Learning`,
+            desc: `• Researched and implemented few-shot image classification task in area of limited real data
+            • Utilized Data Augmentation techniques and Transfer Learning
+            • Few-shot model accuracy outperformed common image classification models like ResNet34 by 11%`,
         },
         {
             title: "Software Engineer Intern",
